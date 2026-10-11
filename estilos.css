@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: min(100% - 40px, 1120px);
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 36px 0 64px;
+    background: #111417;
+    color: #f3f4f5;
+    font-family: "Lucida Sans Unicode", "Segoe UI", sans-serif;
+    line-height: 1.7;
+}
+
+h1 {
+    margin: 0 0 24px;
+    color: #ff4d4d;
+    font-family: "Cinzel Decorative", Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #140808, 5px 5px 0 rgba(255, 77, 77, 0.45), 0 0 18px rgba(255, 77, 77, 0.35);
+}
+
+h3 {
+    margin: 36px 0 8px;
+    padding-left: 14px;
+    border-left: 3px solid #f04444;
+    color: #5ee5e8;
+    font-size: 1.35rem;
+}
+
+p {
+    max-width: 78ch;
+    margin: 0 0 16px;
+    color: #d9dddf;
+}
+
+h5 {
+    margin: -8px 0 24px;
+    color: #9da7ad;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.cover {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    margin: 0 0 32px;
+    border: 1px solid #343a3e;
+    object-fit: cover;
+    object-position: center 35%;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border-top: 1px solid #343a3e;
+}
+
+.navigation a {
+    padding: 14px 16px;
+    border-bottom: 1px solid #343a3e;
+    color: #f3f4f5;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+    background: #202629;
+    color: #5ee5e8;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: min(100% - 32px, 1120px);
+        padding-top: 24px;
+    }
+
+    .cover {
+        max-height: 280px;
+    }
+}
